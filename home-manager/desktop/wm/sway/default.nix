@@ -10,6 +10,8 @@
             startup = [
                 { command = "mako"; }
                 { command = "firefox"; }
+                { command = "pavucontrol"; }
+                { command = "discord"; }
             ];
 
             input = {
