@@ -12,6 +12,8 @@
 
     ./foot.nix
     ./shell
+
+    ./desktop/wm/sway
   ];
 
   nixpkgs = {

@@ -74,22 +74,16 @@
     };
   };
 
+  security.polkit.enable = true;
+
   # FIXME: Add the rest of your current configuration
   networking.networkmanager.enable = true;
   time.timeZone = "America/Sao_Paulo";
   i18n.defaultLocale = "en_US.UTF-8";
   console = {
     font = "Lat2-Terminus16";
-    useXkbConfig = true;
+    keyMap = "br-abnt2";
   };
-  services.xserver.enable = true;
-  services.xserver.videoDrivers = [ "amdgpu" ];
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-  
-  services.xserver.layout = "br";
-  
-  services.xserver.libinput.enable = true;
   
   sound.enable = true;
   hardware.pulseaudio.enable = true;
@@ -127,6 +121,11 @@
       pinentry
       git
     ];
+  };
+
+  hardware.opengl = {
+    enable = true;
+    driSupport = true;
   };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
