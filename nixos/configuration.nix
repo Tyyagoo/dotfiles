@@ -137,6 +137,7 @@
   hardware.opengl = {
     enable = true;
     driSupport = true;
+    driSupport32Bit = true;
   };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion

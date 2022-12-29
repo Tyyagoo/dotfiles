@@ -14,6 +14,8 @@
     ./shell
 
     ./desktop/wm/sway
+
+    ./games
   ];
 
   nixpkgs = {

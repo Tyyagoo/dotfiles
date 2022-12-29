@@ -1,6 +1,7 @@
 { config, pkgs, libs, ...}: {
     wayland.windowManager.sway = {
         enable = true;
+        xwayland = true;
 
         config = rec {
             modifier = "Mod4";
