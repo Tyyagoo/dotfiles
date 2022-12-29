@@ -46,8 +46,10 @@
   };
 
   # Add stuff for your user as you see fit:
-  # programs.neovim.enable = true;
-  home.packages = with pkgs; [ steam firefox vscode ];
+  home.packages = with pkgs; [
+    firefox
+    vscode
+  ];
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
