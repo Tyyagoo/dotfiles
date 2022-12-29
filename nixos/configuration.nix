@@ -85,8 +85,6 @@
     keyMap = "br-abnt2";
   };
   
-  sound.enable = true;
-  hardware.pulseaudio.enable = true;
   # =================================================
 
   networking.hostName = "nixty";
@@ -114,6 +112,19 @@
   #   memorySize = 4096; # Use 2048MiB memory.
   #   cores = 4;         # Simulate 4 cores.
   # };
+
+  #######
+  # SOUND #
+  #######
+  security.rtkit.enable = true;
+  hardware.pulseaudio.enable = false;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
+
 
   environment = {
     shells = [pkgs.zsh];
