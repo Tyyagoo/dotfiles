@@ -8,6 +8,7 @@
             menu = "wofi";
 
             startup = [
+                { command = "mako"; }
                 { command = "firefox"; }
             ];
 

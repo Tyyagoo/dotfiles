@@ -20,7 +20,7 @@
     # You can add overlays here
     overlays = [
       # If you want to use overlays your own flake exports (from overlays dir):
-      # outputs.overlays.modifications
+      outputs.overlays.modifications
       # outputs.overlays.additions
 
       # Or overlays exported from other flakes:
@@ -32,6 +32,8 @@
       #     patches = [ ./change-hello-to-hi.patch ];
       #   });
       # })
+
+
     ];
     # Configure your nixpkgs instance
     config = {
@@ -49,6 +51,8 @@
 
   # Add stuff for your user as you see fit:
   home.packages = with pkgs; [
+    discord
+    mako
     firefox
     vscode
   ];
