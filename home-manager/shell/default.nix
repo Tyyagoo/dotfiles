@@ -1,6 +1,7 @@
 { pkgs, lib, config, ...}: {
     imports = [
         ./cli.nix
+        ./git.nix
         ./zsh.nix
     ];
 

@@ -51,18 +51,7 @@
     vscode
   ];
 
-  # Enable home-manager and git
   programs.home-manager.enable = true;
-  programs.git = {
-    enable = true;
-    lfs.enable = true;
-    userName = "Tyyagoo";
-    userEmail = "tyyago.dev@gmail.com";
-    signing = {
-      signByDefault = true;
-      key = "D12808250532E16B";
-    };
-  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
