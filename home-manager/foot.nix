@@ -4,6 +4,7 @@
     settings = {
       main = {
         shell = "/home/tyyago/.nix-profile/bin/zsh";
+        pad = "15x15";
       };
 
       colors = {
